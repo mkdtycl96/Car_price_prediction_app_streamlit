@@ -10,7 +10,7 @@ html_temp = """
 st.markdown(html_temp,unsafe_allow_html=True)
 
 model1 =pickle.load(open("xgb_model","rb"))
-model2= pickle.load(open("rf_model","rb"))
+#model2= pickle.load(open("rf_model","rb"))
 
 models = st.selectbox("Select Model",("Random Forest","XGBoost") )
 
